@@ -112,4 +112,147 @@ For example, the bank integrates with a third-party fraud detection service via 
 | **Empowering Non-Technical Users**  | Enabling branch and relationship managers to generate reports and automate workflows using Power BI and Power Automate, reducing reliance on technical teams.                                                                                                             |
 | **Integration and Interoperability**| Integrating legacy systems and third-party FinTech services (fraud detection, payment gateways) using Azure Logic Apps and Service Bus to ensure smooth data flow and interoperability.                                                                                      |
 
-These expanded use cases demonstrate how a global banking platform can leverage Azure’s cloud capabilities to provide a modern, agile, and scalable solution that caters to diverse customer needs, maintains regulatory compliance, and empowers non-technical users with customizable and user-friendly tools.
+
+
+Here are **Mermaid diagrams** to represent each of the use cases described in the table. Each diagram is aligned with its corresponding use case to visually explain the flow of information and architecture.
+
+### 1. **Rapid Customization for Diverse Customers**
+
+```mermaid
+graph TD
+    A[Banking Platform] --> B[Retail Customers]
+    A --> C[Corporate Customers]
+    A --> D[HNWI Customers]
+    
+    B --> E[Custom UI/UX]
+    C --> F[Financial Dashboards]
+    D --> G[Personalized Advisory Services]
+    
+    subgraph Backend Services
+        E --> H[Microservices on AKS]
+        F --> H
+        G --> H
+    end
+```
+
+### 2. **Agile Development and Iteration**
+
+```mermaid
+graph TD
+    A[Banking Platform] --> B[Feature Development]
+    B --> C[CI/CD Pipeline]
+    C --> D[Testing Environment]
+    D --> E[User Feedback Loop]
+    E --> F[Production Deployment]
+    F --> G[Global Users]
+    
+    subgraph Azure DevOps
+        B
+        C
+    end
+```
+
+### 3. **Reduced Development Costs**
+
+```mermaid
+graph TD
+    A[Banking Platform] --> B[Serverless Functions]
+    B --> C[Auto-Scale Based on Demand]
+    C --> D[High Transaction Volume Region]
+    C --> E[Low Transaction Volume Region]
+    F[Azure Functions] --> G[Onboarding Automation]
+    F --> H[Fraud Detection Automation]
+    
+    A --> F
+```
+
+### 4. **Consistent Product Experience**
+
+```mermaid
+graph TD
+    A[Banking Platform APIs] --> B[Mobile App]
+    A --> C[Web Portal]
+    A --> D[Branch Kiosk]
+    
+    subgraph Central API Management
+        A
+    end
+    
+    B --> E[Unified Experience]
+    C --> E
+    D --> E
+```
+
+### 5. **Scalability and Multi-Tenancy**
+
+```mermaid
+graph TD
+    A[Banking Platform] --> B[Bank A]
+    A --> C[Bank B]
+    A --> D[Bank C]
+    
+    B --> E[Custom Branding]
+    C --> F[Custom Product Offerings]
+    D --> G[Custom Themes]
+    
+    subgraph Multi-Tenancy Architecture
+        B
+        C
+        D
+    end
+```
+
+### 6. **Adapting to Regulatory Compliance**
+
+```mermaid
+graph TD
+    A[Banking Platform] --> B[Azure Policy]
+    A --> C[Azure Blueprints]
+    
+    B --> D[GDPR Compliance]
+    C --> E[PSD2 Compliance]
+    B --> F[Basel III Compliance]
+    
+    subgraph Compliance Framework
+        B
+        C
+    end
+```
+
+### 7. **Empowering Non-Technical Users**
+
+```mermaid
+graph TD
+    A[Banking Platform] --> B[Power BI]
+    A --> C[Power Apps]
+    A --> D[Power Automate]
+    
+    B --> E[Branch Manager Reports]
+    C --> F[Relationship Manager Automation]
+    D --> G[Workflow Automation]
+    
+    subgraph Power Platform
+        B
+        C
+        D
+    end
+```
+
+### 8. **Integration and Interoperability**
+
+```mermaid
+graph TD
+    A[Banking Platform] --> B[Legacy System]
+    A --> C[Third-Party Fraud Detection]
+    A --> D[Payment Gateways]
+    
+    B --> E[Azure Logic Apps]
+    C --> E
+    D --> E
+    
+    subgraph Integration Hub
+        E[Azure Service Bus]
+    end
+```
+
+Each of these Mermaid diagrams represents the architecture or workflow related to the banking platform and the specific use case. These diagrams can help in visually understanding how each component interacts with others, providing a clear picture of how the system functions in real-world scenarios.
